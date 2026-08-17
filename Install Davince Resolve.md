@@ -1,8 +1,6 @@
 # Instalação do Davince Resolve studio
 
-### 
-
-1. Instalar resolve studio
+### Instalar resolve studio
 
 decida qual versão usar e baixe
 
@@ -17,7 +15,7 @@ decida qual versão usar e baixe
 Site download  
 https://www.blackmagicdesign.com/support/
 
-Instale pulando requisitos
+### Instale pulando requisitos
 
 ```
 sudo apt install unzip
@@ -36,7 +34,7 @@ chmod +x DaVinci_Resolve_Studio_18.6.5_Linux.run
 ```
 
 ```
-SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_18.6.5_Linux.run
+sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_18.6.5_Linux.run
 ```
 
 ### Resolver bibliotecas faltando
@@ -50,7 +48,7 @@ sudo mkdir disabled-libraries
 ```
 
 ```
-sudo mv libglib\* libgio\* libgmodule\* disabled-libraries
+sudo mv libglib* libgio* libgmodule* disabled-libraries
 ```
 
 ## Magica
