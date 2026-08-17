@@ -1,11 +1,20 @@
-
 # Instalação do Davince Resolve studio
 
 ###   
 1. Instalar resolve studio
 
-decida qual versão usar ebaixe   
-“ <https://www.blackmagicdesign.com/support/>“
+decida qual versão usar e baixe 
+
+```
+21.0.2
+
+20.3.2
+
+18.6.5
+```
+
+Site download  
+https://www.blackmagicdesign.com/support/
 
 Instale pulando requisitos
 
