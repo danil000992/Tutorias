@@ -31,9 +31,8 @@ unzip DaVinci_Resolve_Studio_18.6.5_Linux.zip
 ```
 
 ```
-cd ~/Downloads \
-chmod +x DaVinci_Resolve_Studio_18.6.5_Linux.run \
-sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_18.6.5_Linux.run
+chmod +x DaVinci_Resolve_Studio_18.6.5_Linux.run
+SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_18.6.5_Linux.run
 ```
 
 ### Resolver bibliotecas faltando
