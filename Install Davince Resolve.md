@@ -51,6 +51,41 @@ sudo mkdir disabled-libraries
 sudo mv libglib* libgio* libgmodule* disabled-libraries
 ```
 
+##### 
+
+##### Problema 1. Iniciar com Nvidia em notebooks com que tem placa integrada e dedicada Nvidia
+
+```
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only /opt/resolve/bin/resolve
+```
+
+##### problema 2. Resolver áudio não saindo pelo fones de ouvido
+
+######   
+verifique qual provedor de audio do teu sistema
+
+```
+pactl info | grep "Server Name"
+```
+
+PipeWire: pipewire-alsa
+
+PulseAudio: pulseaudio-alsa
+
+```
+sudo apt install pipewire-alsa
+```
+
+```
+sudo apt install pulseaudio-alsa
+```
+
+###### verifica e instala automaticamente
+
+```
+if pactl info 2>/dev/null | grep -qi "pipewire"; then sudo apt install pipewire-alsa; elif pactl info 2>/dev/null | grep -qi "pulseaudio"; then sudo apt install pulseaudio-alsa; else echo "PipeWire/PulseAudio não detectado"; fi
+```
+
 ## Magica
 
 ### Davinci resolve 21.0.2 studio
