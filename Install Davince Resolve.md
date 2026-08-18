@@ -1,6 +1,6 @@
 # Instalação do Davince Resolve studio
 
-### Instalar resolve studio
+### 1. Instalar resolve studio
 
 decida qual versão usar e baixe
 
@@ -53,6 +53,8 @@ sudo mv libglib* libgio* libgmodule* disabled-libraries
 
 ##### 
 
+# 2. Resolver problemas no linux
+
 ##### Problema 1. Iniciar com Nvidia em notebooks com que tem placa integrada e dedicada Nvidia
 
 ```
@@ -86,7 +88,7 @@ sudo apt install pulseaudio-alsa
 if pactl info 2>/dev/null | grep -qi "pipewire"; then sudo apt install pipewire-alsa; elif pactl info 2>/dev/null | grep -qi "pulseaudio"; then sudo apt install pulseaudio-alsa; else echo "PipeWire/PulseAudio não detectado"; fi
 ```
 
-## Magica
+## 3. Magica
 
 ### Davinci resolve 21.0.2 studio
 
@@ -121,6 +123,8 @@ echo -e "LICENSE blackmagic davinciresolvestudio 999999 permanent uncounted\nhos
 ```
 sudo perl -pi -e 's/\x00\x85\xc0\x74\x7b\xe8/\x00\x85\xc0\xEB\x7b\xe8/g' /opt/resolve/bin/resolve
 ```
+
+### 3.1 Ativando  Aceleração de Hardware
 
 ### Criar pasta dos plugins e colocar o plugin ffmpeg
 
