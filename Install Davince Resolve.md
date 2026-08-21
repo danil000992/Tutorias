@@ -41,13 +41,7 @@ sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Studio_18.6.5_Linux.run
 
 ```
 cd /opt/resolve/libs  
-```
-
-```
 sudo mkdir disabled-libraries
-```
-
-```
 sudo mv libglib* libgio* libgmodule* disabled-libraries
 ```
 
